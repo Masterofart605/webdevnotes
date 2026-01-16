@@ -1,0 +1,27 @@
+#cat-section {
+  background-color: rgb(194, 234, 250);
+  color: rgb(79, 94, 100);
+  overflow-x: scroll;
+}
+#cat-section figure {
+  display: inline-block;
+  background-color: rgb(232, 248, 254);
+  border-radius: 10px;
+}
+#cat-section figcaption {
+  padding: 10px;
+}
+#cat-section figure:hover {
+  transform: scale(1.30);
+  transition: all 1s;
+}
+#cat-section img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 300px;
+}
+
+/* This is the font stuff */
+body {
+  font-family: "Rubik", sans-serif;
+}
