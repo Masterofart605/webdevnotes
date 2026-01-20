@@ -40,6 +40,7 @@
 }
 #cat3{
   background-image: url("./cats/cat3.jpg");
+  background-position: bottom;
 }
 .catphoto{
   height: 300px;
