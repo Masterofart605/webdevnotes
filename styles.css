@@ -1,7 +1,16 @@
+:root {
+  --coolcolor: #c2eafa;
+  background-color: rgb(219, 242, 248);
+  color: rgb(75, 93, 100);
+}
+
 #cat-section {
-  background-color: rgb(194, 234, 250);
-  color: rgb(79, 94, 100);
-  overflow-x: scroll;
+  background-color: var(--coolcolor);
+  color: #4f5e64;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 #cat-section figure {
   display: inline-block;
@@ -12,13 +21,31 @@
   padding: 10px;
 }
 #cat-section figure:hover {
-  transform: scale(1.30);
-  transition: all 1s;
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 #cat-section img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   width: 300px;
+}
+
+
+#cat1{
+  background-image: url("./cats/cat1.jpg");
+}
+#cat2{
+  background-image: url("./cats/cat2.jpg");
+}
+#cat3{
+  background-image: url("./cats/cat3.jpg");
+}
+.catphoto{
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-size:cover ;
+  background-repeat: no-repeat;
 }
 
 /* This is the font stuff */
