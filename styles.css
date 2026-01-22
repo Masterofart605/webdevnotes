@@ -1,36 +1,53 @@
 :root {
+  --backDark: #203620;
+  --backLight: #3d663d;
+  --textColor:#a0eaa0;
   --coolcolor: #c2eafa;
-  background-color: rgb(219, 242, 248);
-  color: rgb(75, 93, 100);
+  --shadowColor:#192919;
+  background-color: var(--backDark);
+  color: #a0eaa0;
+}
+a{
+  color: var(--textColor);
 }
 
 #cat-section {
-  background-color: var(--coolcolor);
-  color: #4f5e64;
+  background-color: var(--backLight);
+  color: var(--textColor);
   overflow-x: auto;
   white-space: nowrap;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 #cat-section figure {
+  transition: all 0.5s;
   display: inline-block;
-  background-color: rgb(232, 248, 254);
+  background-color: var(--backDark);
   border-radius: 10px;
 }
 #cat-section figcaption {
   padding: 10px;
+  transition: all 0.5s;
 }
 #cat-section figure:hover {
   transform: scale(1.1);
-  transition: all 0.5s;
-  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+  box-shadow: 10px 10px 5px var(--shadowColor);
+  border-color: var(--textColor);
+  border-style: solid;
+  border-width: .5px;
 }
+
 #cat-section img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   width: 300px;
 }
-
+#cat-section figure:hover figcaption{
+  background-color: var(--textColor);
+  color: var(--backDark);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
 #cat1{
   background-image: url("./cats/cat1.jpg");
@@ -48,6 +65,8 @@
   background-position: center;
   background-size:cover ;
   background-repeat: no-repeat;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 /* This is the font stuff */
